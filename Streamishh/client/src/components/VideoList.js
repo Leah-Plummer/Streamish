@@ -5,7 +5,7 @@ import { getAllVideos } from "../modules/videoManager";
 const VideoList = () => {
   const [videos, setVideos] = useState([]);
 
-  const getVideos = () => {
+ const getVideos = () => {
     getAllVideos().then(videos => setVideos(videos));
   };
 
