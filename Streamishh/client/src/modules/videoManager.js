@@ -1,3 +1,4 @@
+
 const baseUrl = '/api/video';
 
 export const getAllVideos = () => {
@@ -6,7 +7,7 @@ export const getAllVideos = () => {
 };
 
 export const addVideo = (video) => {
-  return fetch(baseUrl, {
+  return fetch(`${baseUrl}/Add`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -14,3 +15,8 @@ export const addVideo = (video) => {
     body: JSON.stringify(video),
   });
 };
+
+// export const searchVideos = (searchString, descending) => {
+//   return fetch(`${baseUrl}/search`)
+//   .then((res) => res.json())
+// };
