@@ -28,8 +28,10 @@ const VideoForm = () => {
 
     addVideo(video).then(() => {
       setVideo(emptyVideo);
-      getAllVideos();
     });
+
+    getAllVideos();
+    
   };
 
   return (
